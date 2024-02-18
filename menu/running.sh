@@ -54,6 +54,7 @@ CITY=$( curl -s ipinfo.io/city )
 #clear
 
 # CHEK STATUS 
+status_udpcustom=$(systemctl status udp-custom | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 openvpn_service="$(systemctl show openvpn.service --no-page)"
 oovpn=$(echo "${openvpn_service}" | grep 'ActiveState=' | cut -f2 -d=)
 status_openvp=$(/etc/init.d/openvpn status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
@@ -106,6 +107,14 @@ LIGHT='\033[0;37m'
 clear
 
 # STATUS SERVICE OPENVPN
+# STATUS SERVICE UDP
+if [[ $status_udpcustom == "running" ]]; then
+  status_udpcustom=" ${GREEN}Running ${NC}( No Error )"
+else
+  status_udpcustom="${RED}  Not Running ${NC}  ( Error )"
+fi
+
+
 if [[ $oovpn == "active" ]]; then
   status_openvpn=" ${GREEN}Running ${NC}( No Error )"
 else
@@ -265,6 +274,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[40;1;37m            ⇱ Service Information ⇲             \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "❇️ SSH / TUN               :$status_ssh"
+echo -e "❇️ UDP CUSTOM              :$status_udpcustom"
 echo -e "❇️ OpenVPN                 :$status_openvpn"
 echo -e "❇️ Dropbear                :$status_beruangjatuh"
 echo -e "❇️ Stunnel4                :$status_stunnel"
