@@ -128,9 +128,9 @@ echo ""
 wget -q https://raw.githubusercontent.com/gazzent/vergil/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-yellow "Add Domain for vmess/vless/trojan dll"
+yellow "ADD DOMAIN UNTUK SSH/VMESS/VLESS/TROJAN"
 echo " "
-read -rp "Input ur domain : " -e pp
+read -rp "MASUKAN DOMAIN ANDA YANG SUDAH DI PPINTING KE CF: " -e pp
     if [ -z $pp ]; then
         echo -e "
         Nothing input for domain!
