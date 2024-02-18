@@ -317,7 +317,7 @@ wget -O acs-set "https://raw.githubusercontent.com/gazzent/vergil/main/acs-set.s
 
 wget -O sshws "https://raw.githubusercontent.com/gazzent/vergil/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/gazzent/vergil/main/status.sh"
-wget -O menu-bckp "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-bckp.sh"
+wget -O menu-bckp "https://raw.githubusercontent.com/gazzent/vergil/main/backup/menu-bckp.sh"
 wget -O backup "https://raw.githubusercontent.com/gazzent/vergil/main/backup/backup.sh"
 wget -O restore "https://raw.githubusercontent.com/gazzent/vergil/main/backup/restore.sh"
 
