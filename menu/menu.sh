@@ -236,7 +236,7 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e " ${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e " ${PURPLE}| \E[39;1;92m        SCRIPT PREMIUM BY KINGSTORES        \E[0m ${PURPLE}|"
+echo -e " ${PURPLE}| \E[39;1;92m           SCRIPT PREMIUM BY KINGSTORES           \E[0m ${PURPLE}|"
 echo -e " ${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │                  ${BIWhite}${UWhite}Server Informations${NC}"
