@@ -58,7 +58,7 @@ if [ "" = "$PKG_OK" ]; then
   sleep 1
   echo ""
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] If error you need.. to do this"
+  echo -e "[ ${tyblue}NOTES${NC} ] JIKA ERROR SAAT PENG INSTALLAN MAKA COMMAND"
   sleep 1
   echo ""
   sleep 1
@@ -68,17 +68,17 @@ if [ "" = "$PKG_OK" ]; then
   sleep 1
   echo -e "[ ${tyblue}NOTES${NC} ] 3. apt dist-upgrade -y"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 4. reboot"
+  echo -e "[ ${tyblue}NOTES${NC} ] 4. TERKAHIR reboot"
   sleep 1
   echo ""
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
+  echo -e "[ ${tyblue}NOTES${NC} ] INI ADALAH SCRIPT CANDRA VPN STORE"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-  echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
+  echo -e "[ ${tyblue}NOTES${NC} ] MOHON HARGAI KARYA KAMI"
+  echo -e "[ ${tyblue}NOTES${NC} ] PAHAM KAN BANGSAT ? TEKAN ENTER "
   read
 else
-  echo -e "[ ${green}INFO${NC} ] Oke installed"
+  echo -e "[ ${green}INFO${NC} ] OKE GASS ANJING"
 fi
 
 ttet=`uname -r`
@@ -167,6 +167,23 @@ clear
 wget https://raw.githubusercontent.com/gazzent/vergil/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/gazzent/vergil/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
+#Instal slowdns
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green          Install SLDNS              $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
+wget https://raw.githubusercontent.com/gazzent/vergil/main/addons/dns2.sh && chmod +x dns2.sh && ./dns2.sh
+clear
+
+#Instal udp
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green          Install UDP              $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
+wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/Tunnel/udp.sh && bash udp.sh
+clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
 
@@ -203,7 +220,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCRIPT CANDRA IRAWAN ]-===================="
+echo "===============-[ SCRIPT PREMIUM CANDRA IRAWAN ]-==============="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -243,7 +260,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By CANDRA IRAWAN ]-==============="
+echo "===============-[ SCRIPT PREMIUM CANDRA IRAWAN ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
@@ -253,5 +270,5 @@ rm /root/insshws.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
-read -n 1 -s -r -p "Press any key to reboot"
+read -n 1 -s -r -p "TEKAN APA SAJA UNTUK REBOOT VPS ANDA"
 reboot
