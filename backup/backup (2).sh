@@ -49,6 +49,7 @@ url=$(rclone link dr:backup/$IP-$date-$domain-vergil.zip)
 id=(`echo $url | grep '^https' | cut -d'=' -f2`)
 link="https://drive.google.com/u/4/uc?id=${id}&export=download"
 echo -e "
+echo -e "
 Detail Backup 
 ==================================
 IP VPS        : $IP
@@ -57,7 +58,27 @@ Tanggal       : $date
 ==================================
 " | mail -s "Backup Data" $email
 rm -rf /root/backup
-rm -r /root/$IP-$date-$domain-vergil.zip
+rm -r /root/$IP-$date.zip
+clear
+CHATID="$CHATID"
+KEY="$KEY"
+TIME="$TIME"
+URL="$URL"
+TEXT="<code>-----------------------</code>
+<code>Detail Backup </code>
+<code>-----------------------</code>
+<code>DOMAIN       : ${domain}</code>
+<code>-----------------------</code>
+<code>IP VPS       : ${IP}</code>
+<code>-----------------------</code>
+<code>Link Backup   :</code> $link
+<code>-----------------------</code>
+<code>Tanggal : $date</code>
+<code>-----------------------</code>
+"
+
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+echo ""
 clear
 echo -e "
 Detail Backup 
@@ -67,4 +88,5 @@ Link Backup   : $link
 Tanggal       : $date
 ==================================
 "
-echo "Silahkan cek Kotak Masuk $email"
+echo "Silahkan copy Link dan restore di VPS baru"
+echo ""
