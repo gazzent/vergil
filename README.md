@@ -1,11 +1,11 @@
 ## Update & Upgrade First Your VPS for Debian
    ```html
-  apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
+  apt update -y && apt upgrade -y && apt dist-upgrade -y 
 
   ```
 ## Update & Upgrade First Your VPS for Ubuntu
  ```html
-  apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && reboot
+  apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub 
 
 
   ```
