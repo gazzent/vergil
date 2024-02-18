@@ -12,6 +12,10 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
+export CHATID="6800716979"
+export KEY="6144661237:AAF-pZ4qPP_O8h1s0Y93QLvaIrksy7x-UI4"
+export TIME="10"
+export URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 IP=$(wget -qO- ipinfo.io/ip);
 date=$(date +"%Y-%m-%d-%H:%M:%S")
