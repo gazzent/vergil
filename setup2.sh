@@ -128,9 +128,11 @@ echo ""
 wget -q https://raw.githubusercontent.com/gazzent/vergil/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-yellow "ADD DOMAIN UNTUK SSH/VMESS/VLESS/TROJAN"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green      INPUT DOMAIN/CLOUDFLARE        $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo " "
-read -rp "MASUKAN DOMAIN ANDA YANG SUDAH DI PPINTING KE CF: " -e pp
+read -rp "DOMAIN VPS ANDA: " -e pp
     if [ -z $pp ]; then
         echo -e "
         Nothing input for domain!
@@ -169,7 +171,7 @@ wget https://raw.githubusercontent.com/gazzent/vergil/main/sshws/insshws.sh && c
 clear
 # INSTALL NOOBZVPNS
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green          Install XRAY              $NC"
+echo -e "$green          Install NOOBZ              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
