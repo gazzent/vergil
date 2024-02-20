@@ -275,6 +275,7 @@ wget -O menu "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu.sh
 wget -O menu-trial "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-trial.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-vmess.sh"
 wget -O menu-vless "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-vless.sh"
+wget -O menu-noobz "https://raw.githubusercontent.com/gazzent/v1/main/tes/nmenu.sh"
 wget -O running "https://raw.githubusercontent.com/gazzent/vergil/main2/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/gazzent/vergil/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/gazzent/vergil/main2/menu/menu-trgo.sh"
@@ -296,14 +297,14 @@ wget -O tendang "https://raw.githubusercontent.com/gazzent/vergil/main2/ssh/tend
 
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-set.sh"
-wget -O menu-domain "https://raw.githubusercontent.com/gazzent/vergil/main2/menu/menu-domain.sh"
-wget -O add-host "https://raw.githubusercontent.com/gazzent/vergil/main2/ssh/add-host.sh"
-wget -O port-change "https://raw.githubusercontent.com/gazzent/vergil/main2/port/port-change.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/gazzent/vergil/main2/xray/certv2ray.sh"
-wget -O menu-webmin "https://raw.githubusercontent.com/gazzent/vergil/main2/menu/menu-webmin.sh"
-wget -O speedtest "https://raw.githubusercontent.com/gazzent/vergil/main2/ssh/speedtest_cli.py"
+wget -O menu-domain "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-domain.sh"
+wget -O add-host "https://raw.githubusercontent.com/gazzent/vergil/main/ssh/add-host.sh"
+wget -O port-change "https://raw.githubusercontent.com/gazzent/vergil/main/port/port-change.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/gazzent/vergil/main/xray/certv2ray.sh"
+wget -O menu-webmin "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-webmin.sh"
+wget -O speedtest "https://raw.githubusercontent.com/gazzent/vergil/main/ssh/speedtest_cli.py"
 wget -O about "https://raw.githubusercontent.com/gazzent/vergil/main/menu/about.sh"
-wget -O auto-reboot "https://raw.githubusercontent.com/gazzent/vergil/main2/menu/auto-reboot.sh"
+wget -O auto-reboot "https://raw.githubusercontent.com/gazzent/vergil/main/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/gazzent/vergil/main2/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/gazzent/vergil/main2/menu/bw.sh"
 
@@ -327,6 +328,7 @@ chmod +x menu
 chmod +x menu-trial
 chmod +x menu-vmess
 chmod +x menu-vless
+chmod +x menu-noobz
 chmod +x running
 chmod +x clearcache
 chmod +x menu-trgo
