@@ -71,6 +71,7 @@ let ssa=$ssx/2
 UDPX="https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
 # // Exporting Language to UTF-8
 BIBlack='\033[1;90m'      # Black
+odo=\E[39;1;92m
 RE='\033[1;91m'           # Red
 BIGreen='\033[1;92m'      # Green
 YEL='\033[1;93m'     # Yellow
@@ -234,15 +235,15 @@ menu
 }
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
+echo -e "${YEL} ┌─────────────────────────────────────────────────────┐\033[0m${NC}"
+echo -e "${YEL} │ \E[39;1;92m            𝕊ℂℝ𝕀ℙ𝕋 ℙℝ𝔼𝕄𝕀𝕌𝕄 𝔹𝕐 𝕂𝕀ℕ𝔾𝕊𝕋𝕆ℝ𝔼            \E[0m ${YEL}│"
+echo -e "${YEL} └─────────────────────────────────────────────────────┘\033[0m${NC}"
 echo -e " ${YEL}┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${YEL}│ \E[39;1;92m           SCRIPT PREMIUM BY KINGSTORES      \E[0m ${PURPLE}│"
-echo -e " ${YEL}└─────────────────────────────────────────────────────┘${NC}"
-echo -e " ${YEL}┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${YEL}│                  ${BIWhite}${UWhite}Server Informations${NC}"
+echo -e " ${YEL}│                  ${odo}${odo}𝓢𝓔𝓡𝓥𝓔𝓡 𝓘𝓝𝓕𝓞𝓡𝓜𝓐𝓣𝓘𝓞𝓝𝓢${NC}"
 echo -e " ${YEL}│"
-echo -e " ${YEL}│  ${BICyan}USER CORE      :  ${BIPurple}XRAY${NC}"
-echo -e " ${YEL}│  ${BICyan}DOMAIN VPS     :  ${BIPurple}$(cat /etc/xray/domain)${NC}"
-echo -e " ${YEL}│  ${BICyan}IP-VPS         :  ${BIYellow}$IPVPS${NC}"
+echo -e " ${YEL}│  ${BICyan}𝕌𝕊𝔼ℝ ℂ𝕆ℝ𝔼      :  ${BIPurple}XRAY${NC}"
+echo -e " ${YEL}│  ${BICyan}𝔻𝕆𝕄𝔸𝕀ℕ 𝕍ℙ𝕊     :  ${BIPurple}$(cat /etc/xray/domain)${NC}"
+echo -e " ${YEL}│  ${BICyan}𝕀ℙ-𝕍ℙ𝕊         :  ${BIYellow}$IPVPS${NC}"
 echo -e " ${YEL}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
 echo -e "   ${BICyan}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
@@ -261,10 +262,10 @@ echo -e "${YEL} ┌────────────────────�
 echo -e "${YEL} │$NC ${BICyan}HARI ini${NC}: ${red}$ttoday$NC ${BICyan}KEMARIN${NC}: ${red}$tyest$NC ${BICyan}BULAN${NC}: ${red}$tmon$NC $NC"
 echo -e "${YEL} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "        ${YEL}┌─────────────────────────────────────┐${NC}"
-echo -e "        ${YEL}│  ${RE}VERSION      ${NC}  : ${RE}KODE V3{NC}"
-echo -e "        ${YEL}│  ${RE}ORDER BY   ${NC}    :\033[1;36m CandraVpnz \e[0m"
-echo -e "        ${YEL}│  ${RE}ID KLIEN   ${NC}    :\033[1;36m $Name \e[0m"
-echo -e "        ${YEL}│  ${RE}EXPIRED SCRIPT${NC} : ${BIYellow}$Exp${NC} Days"
+echo -e "        ${YEL}│  ${RE}𝕍𝔼ℝ𝕊𝕀𝕆ℕ      ${NC}  : ${RE}KODE V3{NC}"
+echo -e "        ${YEL}│  ${RE}𝕆ℝ𝔻𝔼ℝ 𝔹𝕐   ${NC}    :\033[1;36m CandraVpnz \e[0m"
+echo -e "        ${YEL}│  ${RE}𝕀𝔻 𝕂𝕃𝕀𝔼ℕ   ${NC}    :\033[1;36m $Name \e[0m"
+echo -e "        ${YEL}│  ${RE}𝔼𝕏ℙ𝕀ℝ𝔼𝔻 𝕊ℂℝ𝕀ℙ𝕋${NC} : ${BIYellow}$Exp${NC} Days"
 echo -e "        ${YEL}└─────────────────────────────────────┘${NC}"
 echo
 read -p " Select menu : " opt
@@ -274,8 +275,8 @@ case $opt in
 2) clear ; menu-vmess ;;
 3) clear ; menu-vless ;;
 4) clear ; menu-trojan ;;
-5) clear ; menu-set ;;
-6) clear ; menu-noobz ;;
+5) clear ; menu-noobz ;;
+6) clear ; menu-set ;;
 7) clear ; menu-bckp ;;
 8) clear ; add-host ;;
 9) clear ; certv2ray ;;
