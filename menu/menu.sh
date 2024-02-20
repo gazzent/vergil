@@ -234,9 +234,9 @@ menu
 }
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "  ${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "  ${PURPLE}| \E[39;1;92m           SCRIPT PREMIUM BY KINGSTORES           \E[0m ${PURPLE}|"
-echo -e "  ${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${RE} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e " ${RE}│ \E[39;1;92m           SCRIPT PREMIUM BY KINGSTORES      \E[0m ${PURPLE}│"
+echo -e " ${Re}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "${RE} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${RE} │                  ${BIWhite}${UWhite}Server Informations${NC}"
 echo -e "${RE} │"
@@ -247,10 +247,10 @@ echo -e " ${Re}└────────────────────�
 echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
 echo -e "   ${BICyan}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
 echo -e " ${YEL}┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "     ${RE}[${BIWhite}01${RE}] SSH     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"    "     ${RE}[${BIWhite}06${RE}] TRIALL    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │"
+echo -e "     ${RE}[${BIWhite}01${RE}] SSH     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"    "     ${RE}[${BIWhite}06${RE}] NOOBZZ    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │"
 echo -e "     ${RE}[${BIWhite}02${RE}] VMESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${RE}[${BIWhite}07${RE}] BACKUP    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │"
 echo -e "     ${RE}[${BIWhite}03${RE}] VLESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${RE}[${BIWhite}08${RE}] ADD-HOST      ${NC}" "${BICyan}     │"
-echo -e "     ${RE}[${BIWhite}04${RE}] TROJAN  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${RE}[${BIWhite}09${RE}] GEN SSL             │"
+echo -e "     ${RE}[${BIWhite}04${RE}] TROJAN  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${RE}[${BIWhite}09${RE}] GEN SSL             ${NC}" "${BICyan}│"
 echo -e "     ${RE}[${BIWhite}05${RE}] SETTING ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${RE}[${BIWhite}10${RE}] INFO RUNNING${BICyan}"
 echo -e " ${YEL}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "${YEL} ┌─────────────────────────────────────────────────────┐${NC}"
