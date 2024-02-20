@@ -268,7 +268,7 @@ echo -e "        ${YEL}│  ${RE}𝕀𝔻 𝕂𝕃𝕀𝔼ℕ   ${NC}    :\033[1
 echo -e "        ${YEL}│  ${RE}𝔼𝕏ℙ𝕀ℝ𝔼𝔻 𝕊ℂℝ𝕀ℙ𝕋${NC} : ${BIYellow}$Exp${NC} Days"
 echo -e "        ${YEL}└─────────────────────────────────────┘${NC}"
 echo
-read -p " Select menu : " opt
+           read -p " SELECT MENU (1-10): " opt
 echo -e ""
 case $opt in
 1) clear ; menu-ssh ;;
