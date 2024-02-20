@@ -275,7 +275,7 @@ case $opt in
 3) clear ; menu-vless ;;
 4) clear ; menu-trojan ;;
 5) clear ; menu-set ;;
-6) clear ; menu-trial ;;
+6) clear ; menu-noobz ;;
 7) clear ; menu-bckp ;;
 8) clear ; add-host ;;
 9) clear ; certv2ray ;;
