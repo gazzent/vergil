@@ -275,6 +275,7 @@ wget -O menu "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu.sh
 wget -O menu-trial "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-trial.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-vmess.sh"
 wget -O menu-vless "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-vless.sh"
+wget -O menu-noobz "https://raw.githubusercontent.com/gazzent/v1/main/tes/nmenu.sh"
 wget -O running "https://raw.githubusercontent.com/gazzent/vergil/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/gazzent/vergil/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-trgo.sh"
@@ -327,6 +328,7 @@ chmod +x menu
 chmod +x menu-trial
 chmod +x menu-vmess
 chmod +x menu-vless
+chmod +x menu-noobz
 chmod +x running
 chmod +x clearcache
 chmod +x menu-trgo
