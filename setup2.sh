@@ -167,6 +167,13 @@ clear
 wget https://raw.githubusercontent.com/gazzent/vergil/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/gazzent/vergil/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
+# INSTALL NOOBZVPNS
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green          Install XRAY              $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
+wget https://raw.githubusercontent.com/gazzent/v1/main/noob.sh && chmod noob.sh && ./noob.sh
 #Instal slowdns
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install SLDNS              $NC"
