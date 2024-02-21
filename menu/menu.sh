@@ -252,7 +252,7 @@ echo -e " ${YEL}│${RE}[${BIWhite}01${RE}] SSH      ${BICyan}[${BIYellow}Menu${
 echo -e " ${YEL}│${RE}[${BIWhite}02${RE}] VMESS    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" " ${RE}[${BIWhite}07${RE}] BACKUP    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"
 echo -e " ${YEL}│${RE}[${BIWhite}03${RE}] VLESS    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  " ${RE}[${BIWhite}08${RE}] ADD-HOST      ${NC}"
 echo -e " ${YEL}│${RE}[${BIWhite}04${RE}] TROJAN   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" " ${RE}[${BIWhite}09${RE}] GEN SSL             ${NC}"
-echo -e " ${YEL}│${RE}[${BIWhite}05${RE}] NOOBZVPN ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  " ${RE}[${BIWhite}10${RE}] INFO RUNNING${BICyan}"
+echo -e " ${YEL}│${RE}[${BIWhite}05${RE}] TRIALL   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  " ${RE}[${BIWhite}10${RE}] INFO RUNNING${BICyan}"
 echo -e " ${YEL}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "${YEL} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${YEL} │  \033[0m ${BOLD}${GREEN}XXX${BIYellow} SSH${GREEN}  XXX  ${BIYellow}VMESS  ${GREEN}XXX  ${BIYellow}VLESS  ${GREEN}XXX  ${BIYellow}TROJAN${GREEN} XXX $NC "
@@ -275,7 +275,7 @@ case $opt in
 2) clear ; menu-vmess ;;
 3) clear ; menu-vless ;;
 4) clear ; menu-trojan ;;
-5) clear ; menu-noobz ;;
+5) clear ; menu-trial ;;
 6) clear ; menu-set ;;
 7) clear ; menu-bckp ;;
 8) clear ; add-host ;;
