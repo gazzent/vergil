@@ -170,12 +170,12 @@ wget https://raw.githubusercontent.com/gazzent/vergil/main/xray/ins-xray.sh && c
 wget https://raw.githubusercontent.com/gazzent/vergil/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 # INSTALL NOOBZVPNS
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green          INSTALL NOOBZ              $NC"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-sleep 2
-clear
-wget https://raw.githubusercontent.com/gazzent/noobzvpns/master/noob.sh && chmod +x noob.sh && ./noob.sh
+#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#echo -e "$green          INSTALL NOOBZ              $NC"
+#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#sleep 2
+#clear
+#wget https://raw.githubusercontent.com/gazzent/noobzvpns/master/noob.sh && chmod +x noob.sh && ./noob.sh
 #Instal slowdns
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          INSTALL SLDNS              $NC"
