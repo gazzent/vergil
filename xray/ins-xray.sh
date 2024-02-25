@@ -1,4 +1,6 @@
 #!/bin/bash
+#usergithub
+GitUser=gazzent
 echo -e "
 "
 date
@@ -609,53 +611,53 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "$green          DATA DATA VMESS          $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
-wget -O add-ws "https://raw.githubusercontent.com/gazzent/vergil/main/xray/add-ws.sh" && chmod +x add-ws
-wget -O trialvmess "https://raw.githubusercontent.com/gazzent/vergil/main/xray/trialvmess.sh" && chmod +x trialvmess
-wget -O renew-ws "https://raw.githubusercontent.com/gazzent/vergil/main/xray/renew-ws.sh" && chmod +x renew-ws
-wget -O del-ws "https://raw.githubusercontent.com/gazzent/vergil/main/xray/del-ws.sh" && chmod +x del-ws
-wget -O cek-ws "https://raw.githubusercontent.com/gazzent/vergil/main/xray/cek-ws.sh" && chmod +x cek-ws
+wget -O add-ws "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/add-ws.sh" && chmod +x add-ws
+wget -O trialvmess "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/trialvmess.sh" && chmod +x trialvmess
+wget -O renew-ws "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/renew-ws.sh" && chmod +x renew-ws
+wget -O del-ws "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/del-ws.sh" && chmod +x del-ws
+wget -O cek-ws "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/cek-ws.sh" && chmod +x cek-ws
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          DATA DATA VLESS          $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 # vless
-wget -O add-vless "https://raw.githubusercontent.com/gazzent/vergil/main/xray/add-vless.sh" && chmod +x add-vless
-wget -O trialvless "https://raw.githubusercontent.com/gazzent/vergil/main/xray/trialvless.sh" && chmod +x trialvless
-wget -O renew-vless "https://raw.githubusercontent.com/gazzent/vergil/main/xray/renew-vless.sh" && chmod +x renew-vless
-wget -O del-vless "https://raw.githubusercontent.com/gazzent/vergil/main/xray/del-vless.sh" && chmod +x del-vless
-wget -O cek-vless "https://raw.githubusercontent.com/gazzent/vergil/main/xray/cek-vless.sh" && chmod +x cek-vless
+wget -O add-vless "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/add-vless.sh" && chmod +x add-vless
+wget -O trialvless "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/trialvless.sh" && chmod +x trialvless
+wget -O renew-vless "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/renew-vless.sh" && chmod +x renew-vless
+wget -O del-vless "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/del-vless.sh" && chmod +x del-vless
+wget -O cek-vless "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/cek-vless.sh" && chmod +x cek-vless
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          DATA DATA TROJAN          $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 # trojan
-wget -O add-tr "https://raw.githubusercontent.com/gazzent/vergil/main/xray/add-tr.sh" && chmod +x add-tr
-wget -O trialtrojan "https://raw.githubusercontent.com/gazzent/vergil/main/xray/trialtrojan.sh" && chmod +x trialtrojan
-wget -O del-tr "https://raw.githubusercontent.com/gazzent/vergil/main/xray/del-tr.sh" && chmod +x del-tr
-wget -O renew-tr "https://raw.githubusercontent.com/gazzent/vergil/main/xray/renew-tr.sh" && chmod +x renew-tr
-wget -O cek-tr "https://raw.githubusercontent.com/gazzent/vergil/main/xray/cek-tr.sh" && chmod +x cek-tr
+wget -O add-tr "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/add-tr.sh" && chmod +x add-tr
+wget -O trialtrojan "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/trialtrojan.sh" && chmod +x trialtrojan
+wget -O del-tr "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/del-tr.sh" && chmod +x del-tr
+wget -O renew-tr "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/renew-tr.sh" && chmod +x renew-tr
+wget -O cek-tr "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/cek-tr.sh" && chmod +x cek-tr
 
 # trojan go
-wget -O addtrgo "https://raw.githubusercontent.com/gazzent/vergil/main/xray/addtrgo.sh" && chmod +x addtrgo
-wget -O trialtrojango "https://raw.githubusercontent.com/gazzent/vergil/main/xray/trialtrojango.sh" && chmod +x trialtrojango
-wget -O deltrgo "https://raw.githubusercontent.com/gazzent/vergil/main/xray/deltrgo.sh" && chmod +x deltrgo
-wget -O renewtrgo "https://raw.githubusercontent.com/gazzent/vergil/main/xray/renewtrgo.sh" && chmod +x renewtrgo
-wget -O cektrgo "https://raw.githubusercontent.com/gazzent/vergil/main/xray/cektrgo.sh" && chmod +x cektrgo
+wget -O addtrgo "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/addtrgo.sh" && chmod +x addtrgo
+wget -O trialtrojango "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/trialtrojango.sh" && chmod +x trialtrojango
+wget -O deltrgo "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/deltrgo.sh" && chmod +x deltrgo
+wget -O renewtrgo "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/renewtrgo.sh" && chmod +x renewtrgo
+wget -O cektrgo "https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/cektrgo.sh" && chmod +x cektrgo
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          DATA DATA TAMBAHAN          $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 # addons
-wget -O bbr3 "https://raw.githubusercontent.com/gazzent/vergil/main/addons/bbr3.sh" && chmod +x bbr3
-wget -O bbr4 "https://raw.githubusercontent.com/gazzent/vergil/main/addons/bbr4.sh" && chmod +x bbr4
-wget -O dns1 "https://raw.githubusercontent.com/gazzent/vergil/main/addons/dns.sh" && chmod +x dns1
-wget -O netf "https://raw.githubusercontent.com/gazzent/vergil/main/addons/netf" && chmod +x netf
-wget -O user-tr "https://raw.githubusercontent.com/gazzent/vergil/main/addons/user-tr.sh" && chmod +x user-tr
-wget -O user-vless "https://raw.githubusercontent.com/gazzent/vergil/main/addons/user-vless.sh" && chmod +x user-vless
-wget -O user-ws "https://raw.githubusercontent.com/gazzent/vergil/main/addons/user-ws.sh" && chmod +x user-ws
+wget -O bbr3 "https://raw.githubusercontent.com/${GitUser}/vergil/main/addons/bbr3.sh" && chmod +x bbr3
+wget -O bbr4 "https://raw.githubusercontent.com/${GitUser}/vergil/main/addons/bbr4.sh" && chmod +x bbr4
+wget -O dns1 "https://raw.githubusercontent.com/${GitUser}/vergil/main/addons/dns.sh" && chmod +x dns1
+wget -O netf "https://raw.githubusercontent.com/${GitUser}/vergil/main/addons/netf" && chmod +x netf
+wget -O user-tr "https://raw.githubusercontent.com/${GitUser}/vergil/main/addons/user-tr.sh" && chmod +x user-tr
+wget -O user-vless "https://raw.githubusercontent.com/${GitUser}/vergil/main/addons/user-vless.sh" && chmod +x user-vless
+wget -O user-ws "https://raw.githubusercontent.com/${GitUser}/vergil/main/addons/user-ws.sh" && chmod +x user-ws
 
 
 sleep 1

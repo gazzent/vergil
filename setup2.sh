@@ -210,20 +210,23 @@ if [ -n "$SSH_CLIENT" ] && [ -z "$TMUX" ]; then
         REGION=$(cat $TMPFILE | sed -n 's/^  "region":[[:space:]]*//p' | sed 's/"//g')
         COUNTRY=$(cat $TMPFILE | sed -n 's/^  "country":[[:space:]]*//p' | sed 's/"//g')
         ORG=$(cat $TMPFILE | sed -n 's/^  "org":[[:space:]]*//p' | sed 's/"//g')
-	TEXT="
+	TEXT=" 
+```
 ==============================
-<code>🔰Informasi instalasi script🔰</code>
+🔰Informasi instalasi script🔰
 ==============================
-<code>🔰Tanggal   :</code> <code> $DATE_EXEC</code>
-<code>🔰Domain    :</code> <code> $(cat /etc/xray/domain)</code> 
-<code>🔰Status    :</code> <code> penginstalan script 1 bulan</code>
-<code>✅Hostname  :</code> <code> $HOSTNAME</code>
-<code>✅Publik IP :</code> <code> $IPADDR</code> 
-<code>✅IP PROV   :</code> <code> $IP</code> 
-<code>✅ISP       :</code> <code> $ORG</code>
-<code>✅KOTA      :</code> <code> $CITY</code>
-<code>✅PROVINSI  :</code> <code> $REGION</code>
-<code>✅PORT SSH. :</code> <code> $PORT</code>"
+🔰Tanggal   :  $DATE_EXEC
+🔰Domain    :  $(cat /etc/xray/domain) 
+🔰Status    :  penginstalan script 1 bulan
+✅Hostname  :  $HOSTNAME
+✅Publik IP :  $IPADDR
+✅IP PROV   :  $IP 
+✅ISP       :  $ORG
+✅KOTA      :  $CITY
+✅PROVINSI  :  $REGION
+✅PORT SSH  :  $PORT 
+ ```
+"
 	curl -s --max-time $TIMEOUT -d "chat_id=$USERID&disable_web_page_preview=1&text=$TEXT" $URL > /dev/null
 	rm $TMPFILE
 fi
