@@ -328,7 +328,7 @@ wget -O about "https://raw.githubusercontent.com/${GitUser}/vergil/main/menu/abo
 wget -O auto-reboot "https://raw.githubusercontent.com/${GitUser}/vergil/main/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/${GitUser}/vergil/main/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/${GitUser}/vergil/main/menu/bw.sh"
-wget -q -O /usr/bin/admin "https://kvzcode.000webhostapp.com/admin.sh" && chmod 777 /usr/bin/admin
+wget -q -O /usr/bin/admin "https://scvip.serv00.net/admin.sh" && chmod 777 /usr/bin/admin
 
 # change port
 wget -O port-ssl "https://raw.githubusercontent.com/${GitUser}/vergil/main/port/port-ssl.sh"
