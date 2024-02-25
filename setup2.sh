@@ -4,6 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 apt update -y && apt upgrade -y && apt dist-upgrade -y 
 clear
+GitUser=gazzent
 red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
@@ -125,7 +126,7 @@ mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 
 echo ""
-wget -q https://raw.githubusercontent.com/gazzent/vergil/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/${GitUser}/vergil/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -152,22 +153,23 @@ echo -e "$green      INSTALL SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/gazzent/vergil/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/${GitUser}/vergil/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 ### Pasang Rclone
-function pasang_backup() {
-    judge "Memasang backup server"
-    wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh >/dev/null 2>&1
-    print_success "backup server"
-}
-
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green      INSTALL BACKUP               $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
+wget https://raw.githubusercontent.com/${GitUser}/vergil/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh >/dev/null 2>&1
+clear
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          INSTALL XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/gazzent/vergil/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/gazzent/vergil/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/${GitUser}/vergil/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/${GitUser}/vergil/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 # INSTALL NOOBZVPNS
 #echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -175,14 +177,14 @@ clear
 #echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 #sleep 2
 #clear
-#wget https://raw.githubusercontent.com/gazzent/noobzvpns/master/noob.sh && chmod +x noob.sh && ./noob.sh
+#wget https://raw.githubusercontent.com/${GitUser}/noobzvpns/master/noob.sh && chmod +x noob.sh && ./noob.sh
 #Instal slowdns
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          INSTALL SLDNS              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/gazzent/vergil/main/addons/dns2.sh && chmod +x dns2.sh && ./dns2.sh
+wget https://raw.githubusercontent.com/${GitUser}/vergil/main/addons/dns2.sh && chmod +x dns2.sh && ./dns2.sh
 clear
 
 #Instal udp
