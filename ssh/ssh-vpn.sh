@@ -294,6 +294,7 @@ wget -O cfd "https://raw.githubusercontent.com/${GitUser}/vergil/main/cfd.sh"
 wget -O cfp "https://raw.githubusercontent.com/${GitUser}/vergil/main/cfp.sh"
 wget -O swapkvm "https://raw.githubusercontent.com/${GitUser}/vergil/main/swapkvm.sh"
 wget -O menu-cf "https://raw.githubusercontent.com/${GitUser}/vergil/main/panel-domain.sh"
+wget -O upgrade "https://raw.githubusercontent.com/${GitUser}/vergil/main/upgrade.sh"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          download berhasil          $NC"
