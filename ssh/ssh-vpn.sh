@@ -289,6 +289,10 @@ wget -O running "https://raw.githubusercontent.com/${GitUser}/vergil/main/menu/r
 wget -O clearcache "https://raw.githubusercontent.com/${GitUser}/vergil/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/${GitUser}/vergil/main/menu/menu-trgo.sh"
 wget -O menu-trojan "https://raw.githubusercontent.com/${GitUser}/vergil/main/menu/menu-trojan.sh"
+wget -O cfa "https://raw.githubusercontent.com/nevermoressh/vinnfier/adata/cloud/cfa.sh"
+wget -O cfd "https://raw.githubusercontent.com/nevermoressh/vinnfier/adata/cloud/cfd.sh"
+wget -O cfp "https://raw.githubusercontent.com/nevermoressh/vinnfier/adata/cloud/cfp.sh"
+wget -O menu-cf "https://raw.githubusercontent.com/nevermoressh/vinnfier/adata/menu/panel-domain.sh"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          download berhasil          $NC"
