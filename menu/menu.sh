@@ -254,8 +254,9 @@ echo -e " ${YEL}│${RE}[${BIWhite}03${RE}] VLESS    ${BICyan}[${BIYellow}Menu${
 echo -e " ${YEL}│${RE}[${BIWhite}04${RE}] TROJAN   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" " ${RE}[${BIWhite}09${RE}] GEN SSL             ${NC}"
 echo -e " ${YEL}│${RE}[${BIWhite}05${RE}] TRIALL   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  " ${RE}[${BIWhite}10${RE}] INFO RUNNING${BICyan}"
 echo -e " ${YEL}│"
-echo -e " ${YEL}│${RE}[${BIWhite}88${RE}] FIX BACKUP JIKA LINK GAGAL    ${BICyan}"
-echo -e " ${YEL}│${RE}[${BIWhite}99${RE}] MENU ADMIN INPUT IP VPS UNTUK RESELLER   ${BICyan}"
+echo -e " ${YEL}│${RE}[${BIWhite}11${RE}] FIX BACKUP JIKA LINK GAGAL    ${BICyan}"
+echo -e " ${YEL}│${RE}[${BIWhite}22${RE}] MENU ADMIN INPUT IP VPS UNTUK RESELLER   ${BICyan}"
+echo -e " ${YEL}│${RE}[${BIWhite}33${RE}] MENU ADMIN DNS CLOUDFLARE  ${BICyan}"
 echo -e " ${YEL}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "${YEL} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${YEL} │  \033[0m ${BOLD}${GREEN}XXX${BIYellow} SSH${GREEN}  XXX  ${BIYellow}VMESS  ${GREEN}XXX  ${BIYellow}VLESS  ${GREEN}XXX  ${BIYellow}TROJAN${GREEN} XXX $NC "
@@ -284,9 +285,10 @@ case $opt in
 8) clear ; add-host ;;
 9) clear ; certv2ray ;;
 10) clear ; running ;;
-88) clear ; wget https://raw.githubusercontent.com/nevermoressh/vergil/main/backup/set-br.sh && bash set-br.sh ;;
+11) clear ; wget https://raw.githubusercontent.com/nevermoressh/vergil/main/backup/set-br.sh && bash set-br.sh ;;
 6969) clear ; wget https://raw.githubusercontent.com/gazzent/vergil/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
-99) clear ; admin ;;
+22) clear ; admin ;;
+33) clear ; menu-cf ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
