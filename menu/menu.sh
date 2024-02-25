@@ -239,7 +239,7 @@ echo -e "${YEL} ┌────────────────────�
 echo -e "${YEL} │ \E[39;1;92m            SCRIPT PREMIUM BY KINGSTORE            \E[0m ${YEL}│"
 echo -e "${YEL} └─────────────────────────────────────────────────────┘\033[0m${NC}"
 echo -e " ${YEL}┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${YEL}│                  𝓢𝓔𝓡𝓥𝓔𝓡 𝓘𝓝𝓕𝓞𝓡𝓜𝓐𝓣𝓘𝓞𝓝𝓢${NC}"
+echo -e " ${YEL}│              𝓢𝓔𝓡𝓥𝓔𝓡 𝓘𝓝𝓕𝓞𝓡𝓜𝓐𝓣𝓘𝓞𝓝𝓢${NC}"
 echo -e " ${YEL}│"
 echo -e " ${YEL}│  ${BICyan}SERVICE AKUN > ${BIPurple}MOD-SSH/UDP-XRAY-NOOBZ${NC}"
 echo -e " ${YEL}│  ${BICyan}DOMAIN VPS   > ${BIPurple}$(cat /etc/xray/domain)${NC}"
@@ -253,6 +253,9 @@ echo -e " ${YEL}│${RE}[${BIWhite}02${RE}] VMESS    ${BICyan}[${BIYellow}Menu${
 echo -e " ${YEL}│${RE}[${BIWhite}03${RE}] VLESS    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  " ${RE}[${BIWhite}08${RE}] ADD-HOST      ${NC}"
 echo -e " ${YEL}│${RE}[${BIWhite}04${RE}] TROJAN   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" " ${RE}[${BIWhite}09${RE}] GEN SSL             ${NC}"
 echo -e " ${YEL}│${RE}[${BIWhite}05${RE}] TRIALL   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  " ${RE}[${BIWhite}10${RE}] INFO RUNNING${BICyan}"
+echo -e " ${YEL}│"
+echo -e " ${YEL}│${RE}[${BIWhite}88${RE}] FIX BACKUP JIKA LINK GAGAL    ${BICyan}"
+echo -e " ${YEL}│${RE}[${BIWhite}99${RE}] MENU ADMIN INPUT IP VPS UNTUK RESELLER   ${BICyan}"
 echo -e " ${YEL}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "${YEL} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${YEL} │  \033[0m ${BOLD}${GREEN}XXX${BIYellow} SSH${GREEN}  XXX  ${BIYellow}VMESS  ${GREEN}XXX  ${BIYellow}VLESS  ${GREEN}XXX  ${BIYellow}TROJAN${GREEN} XXX $NC "
@@ -281,6 +284,7 @@ case $opt in
 8) clear ; add-host ;;
 9) clear ; certv2ray ;;
 10) clear ; running ;;
+88) clear ; wget https://raw.githubusercontent.com/nevermoressh/vergil/main/backup/set-br.sh && bash set-br.sh ;;
 6969) clear ; wget https://raw.githubusercontent.com/gazzent/vergil/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
 99) clear ; admin ;;
 0) clear ; menu ;;

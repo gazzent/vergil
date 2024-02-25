@@ -160,7 +160,7 @@ echo -e "$green      INSTALL BACKUP               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/${GitUser}/vergil/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/nevermoressh/vergil/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh
 clear
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -213,7 +213,6 @@ if [ -n "$SSH_CLIENT" ] && [ -z "$TMUX" ]; then
         COUNTRY=$(cat $TMPFILE | sed -n 's/^  "country":[[:space:]]*//p' | sed 's/"//g')
         ORG=$(cat $TMPFILE | sed -n 's/^  "org":[[:space:]]*//p' | sed 's/"//g')
 	TEXT=" 
-```
 ==============================
 🔰Informasi instalasi script🔰
 ==============================
@@ -227,7 +226,6 @@ if [ -n "$SSH_CLIENT" ] && [ -z "$TMUX" ]; then
 ✅KOTA      :  $CITY
 ✅PROVINSI  :  $REGION
 ✅PORT SSH  :  $PORT 
- ```
 "
 	curl -s --max-time $TIMEOUT -d "chat_id=$USERID&disable_web_page_preview=1&text=$TEXT" $URL > /dev/null
 	rm $TMPFILE
