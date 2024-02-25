@@ -12,10 +12,6 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-export CHATID="6800716979"
-export KEY="6144661237:AAF-pZ4qPP_O8h1s0Y93QLvaIrksy7x-UI4"
-export TIME="10"
-export URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 IP=$(wget -qO- ipinfo.io/ip);
 date=$(date +"%Y-%m-%d-%H:%M:%S")
@@ -45,10 +41,9 @@ cp -r /home/vps/public_html backup/public_html
 cd /root
 zip -r $IP-$date-$domain-vergil.zip backup > /dev/null 2>&1
 rclone copy /root/$IP-$date-$domain-vergil.zip dr:backup/
-url=$(rclone link dr:backup/$IP-$date-$domain-vergil.zip)
+url=$(rclone link dr:backup/$IP-$date-$domain.zip)
 id=(`echo $url | grep '^https' | cut -d'=' -f2`)
 link="https://drive.google.com/u/4/uc?id=${id}&export=download"
-echo -e "
 echo -e "
 Detail Backup 
 ==================================
@@ -58,27 +53,7 @@ Tanggal       : $date
 ==================================
 " | mail -s "Backup Data" $email
 rm -rf /root/backup
-rm -r /root/$IP-$date.zip
-clear
-CHATID="$CHATID"
-KEY="$KEY"
-TIME="$TIME"
-URL="$URL"
-TEXT="<code>-----------------------</code>
-<code>Detail Backup </code>
-<code>-----------------------</code>
-<code>DOMAIN       : ${domain}</code>
-<code>-----------------------</code>
-<code>IP VPS       : ${IP}</code>
-<code>-----------------------</code>
-<code>Link Backup   :</code> $link
-<code>-----------------------</code>
-<code>Tanggal : $date</code>
-<code>-----------------------</code>
-"
-
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
-echo ""
+rm -r /root/$IP-$date-$domain-vergil.zip
 clear
 echo -e "
 Detail Backup 
@@ -88,5 +63,4 @@ Link Backup   : $link
 Tanggal       : $date
 ==================================
 "
-echo "Silahkan copy Link dan restore di VPS baru"
-echo ""
+echo "COPY LINK DI ATAS UNTUK RESTORE DATA VPS NYA BRO $email"
