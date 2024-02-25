@@ -156,7 +156,7 @@ wget https://raw.githubusercontent.com/gazzent/vergil/main/ssh/ssh-vpn.sh && chm
 ### Pasang Rclone
 function pasang_backup() {
     judge "Memasang backup server"
-    wget https://raw.githubusercontent.com/gazzent/vergil/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh >/dev/null 2>&1
+    wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/backup/set-br.sh &&  chmod +x set-br.sh && ./set-br.sh >/dev/null 2>&1
     print_success "backup server"
 }
 
