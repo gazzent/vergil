@@ -369,6 +369,7 @@ chmod +x cfd
 chmod +x cfp
 chmod +x swapkvm
 chmod +x menu-cf
+chmod +x upgrade
 
 chmod +x menu-ssh
 chmod +x usernew
