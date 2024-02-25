@@ -9,7 +9,11 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 NET=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 source /etc/os-release
 ver=$VERSION_ID
-
+red='\e[1;31m'
+green='\e[0;32m'
+yell='\e[1;33m'
+tyblue='\e[1;36m'
+NC='\e[0m'
 #detail nama perusahaan
 country=MY
 state=Selangor
@@ -271,6 +275,10 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 # menu
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green          download menu              $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 3
 wget -O menu "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-trial.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-vmess.sh"
@@ -280,7 +288,16 @@ wget -O running "https://raw.githubusercontent.com/gazzent/vergil/main/menu/runn
 wget -O clearcache "https://raw.githubusercontent.com/gazzent/vergil/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-trgo.sh"
 wget -O menu-trojan "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-trojan.sh"
-
+clear
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green          download berhasil          $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green        download menu ssh            $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 3
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-ssh.sh"
 wget -O usernew "https://raw.githubusercontent.com/gazzent/vergil/main/ssh/usernew.sh"
@@ -293,7 +310,11 @@ wget -O delete "https://raw.githubusercontent.com/gazzent/vergil/main/ssh/delete
 wget -O autokill "https://raw.githubusercontent.com/gazzent/vergil/main/ssh/autokill.sh"
 wget -O ceklim "https://raw.githubusercontent.com/gazzent/vergil/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/gazzent/vergil/main/ssh/tendang.sh"
-
+clear
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green      download menu system         $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-set.sh"
 wget -O menu-domain "https://raw.githubusercontent.com/gazzent/vergil/main/menu/menu-domain.sh"
@@ -323,7 +344,10 @@ wget -O backup "https://raw.githubusercontent.com/gazzent/vergil/main/backup/bac
 wget -O restore "https://raw.githubusercontent.com/gazzent/vergil/main/backup/restore.sh"
 
 wget -O jam "https://raw.githubusercontent.com/gazzent/vergil/main/jam.sh"
-
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green         DOWNLOAD SELESAI          $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
 chmod +x menu
 chmod +x menu-trial
 chmod +x menu-vmess
