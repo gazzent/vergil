@@ -76,8 +76,6 @@ if [ "" = "$PKG_OK" ]; then
   echo -e "[ ${tyblue}NOTES${NC} ] INI ADALAH SCRIPT CANDRA VPN STORE"
   sleep 1
   echo -e "[ ${tyblue}NOTES${NC} ] MOHON HARGAI KARYA KAMI"
-  echo -e "[ ${tyblue}NOTES${NC} ] PAHAM KAN BANGSAT ? TEKAN ENTER "
-  read
 else
   echo -e "[ ${green}INFO${NC} ] OKE GASS ANJING"
 fi
